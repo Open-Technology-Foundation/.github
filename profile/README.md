@@ -36,15 +36,15 @@ We maintain [specialised vector databases and APIs](https://yatti.id/kb/) for qu
 ### Major Software Projects
 
 #### Core Knowledgebase Infrastructure
-- **customkb** - Advanced knowledgebase management system with vector database support, semantic search capabilities, and LLM integration
-- **kb-query** - Command-line interface for querying knowledgebases with support for context-aware responses and reference material integration (under development)
-- **dejavu2-cli** - Modern terminal-based file browser and manager with advanced search and filtering capabilities
+- **[customkb](https://github.com/Open-Technology-Foundation/customkb)** - Advanced knowledgebase management system with vector database support, semantic search capabilities, and LLM integration
+- **[kb-query](https://github.com/Open-Technology-Foundation/kb-query)** - Command-line interface for querying knowledgebases with support for context-aware responses and reference material integration (under development)
+- **[dejavu2-cli](https://github.com/Open-Technology-Foundation/dejavu2-cli)** - Modern terminal-based file browser and manager with advanced search and filtering capabilities
 
 #### System Utilities
-- **md2ansi** - Markdown to ANSI converter for beautiful terminal output, supporting tables, syntax highlighting, and custom themes
-- **checkpoint** - Intelligent backup and checkpoint system for development workflows
-- **syshealth** - Comprehensive system monitoring and health checking suite
-- **rtfm** - Smart documentation reader and search tool ("Read The Fine Manual")
+- **[md2ansi](https://github.com/Open-Technology-Foundation/md2ansi)** - Markdown to ANSI converter for beautiful terminal output, supporting tables, syntax highlighting, and custom themes
+- **[checkpoint](https://github.com/Open-Technology-Foundation/checkpoint)** - Intelligent backup and checkpoint system for development workflows
+- **[syshealth](https://github.com/Open-Technology-Foundation/syshealth)** - Comprehensive system monitoring and health checking suite
+- **[rtfm](https://github.com/Open-Technology-Foundation/rtfm)** - Smart documentation reader and search tool ("Read The Fine Manual")
 
 ## Contributing
 
