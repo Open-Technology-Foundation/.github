@@ -33,11 +33,10 @@ We maintain [specialised vector databases and APIs](https://yatti.id/kb/) for qu
 
 **API Endpoint**: `https://yatti.id/v1/` (Under development)
 
-### Major Software Projects
+### Coding Projects
 
 #### Core Knowledgebase Infrastructure
 - **[customkb](https://github.com/Open-Technology-Foundation/customkb)** - Advanced knowledgebase management system with vector database support, semantic search capabilities, and LLM integration
-- **[kb-query](https://github.com/Open-Technology-Foundation/kb-query)** - Command-line interface for querying knowledgebases with support for context-aware responses and reference material integration (under development)
 - **[dejavu2-cli](https://github.com/Open-Technology-Foundation/dejavu2-cli)** - Modern terminal-based file browser and manager with advanced search and filtering capabilities
 
 #### System Utilities
@@ -51,7 +50,6 @@ We maintain [specialised vector databases and APIs](https://yatti.id/kb/) for qu
 We welcome contributions that align with our mission of openness and accessibility. Whether you're interested in:
 - Developing open source tools for Indonesian contexts
 - Improving our knowledgebase systems
-- Translating resources into Indonesian languages
 - Advocating for open technology policies
 
 Please visit our repositories and join us in building a more open and equitable digital Indonesia.
