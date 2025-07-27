@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://yatti.id/images/logo.svg" alt="YaTTI Logo" width="200">
+</p>
+
 # YaTTI - Indonesian Open Technology Foundation
 
 YaTTI (Yayasan Teknologi Terbuka Indonesia) is the Indonesian Open Technology Foundation, established in 2014 with a clear mission: to democratise technology and make knowledge freely available to all Indonesians. We believe that sustainable progress comes not from proprietary systems or closed knowledge, but from transparency, collaboration, and shared innovation.
@@ -9,44 +13,8 @@ In a society where information has traditionally been closely held and access re
 - **Creating educational resources** that empower communities to participate meaningfully in the digital economy
 - **Developing transparent governance models** that demonstrate accountability in practice
 
-## What We Do
-
-### Knowledgebase Systems
-We maintain specialised vector databases and APIs for querying domain-specific knowledge, including:
-- Applied Anthropology resources
-- Secular Dharma teachings
-- Indonesian legal and regulatory information (peraturan.go.id)
-
-**API Endpoint**: `https://yatti.id/v1/`
-
-### Major Software Projects
-
-#### Core Infrastructure
-- **customkb** - Advanced knowledgebase management system with vector database support, semantic search capabilities, and LLM integration
-- **kb-query** - Command-line interface for querying knowledgebases with support for context-aware responses and reference material integration
-
-#### Development Tools
-- **dejavu2-cli** - Modern terminal-based file browser and manager with advanced search and filtering capabilities
-- **md2ansi** - Markdown to ANSI converter for beautiful terminal output, supporting tables, syntax highlighting, and custom themes
-- **mdir2md** - Directory-to-markdown documentation generator that creates comprehensive project documentation
-- **typewriter** - Terminal text animation tool for creating engaging command-line experiences
-
-#### AI and Language Processing
-- **transcribe** - High-quality audio transcription using OpenAI's Whisper with intelligent post-processing
-- **translate** - Multi-language translation utilities optimised for Indonesian contexts
-- **whatlang** - Language detection tool supporting Indonesian and regional languages
-
-#### System Utilities
-- **checkpoint** - Intelligent backup and checkpoint system for development workflows
-- **syshealth** - Comprehensive system monitoring and health checking suite
-- **rtfm** - Smart documentation reader and search tool ("Read The Fine Manual")
-
-### Localisation Initiatives
-
-YaTTI develops and maintains the **official en_ID locale definition** - the English (Indonesia) locale that enables proper date, time, currency, and cultural formatting for English-language software used in Indonesia. This crucial infrastructure ensures that international software respects Indonesian conventions while operating in English.
-
 ### Open Technology Advocacy
-Through comprehensive position papers and practical implementations, we promote:
+Through [comprehensive position papers](https://yatti.id/statements/) and practical implementations, we promote:
 - Open Source development methodologies
 - Open Data initiatives
 - Open Standards and Protocols
@@ -54,6 +22,33 @@ Through comprehensive position papers and practical implementations, we promote:
 - Creative Commons and Open Commons principles
 - Open Patent frameworks
 - Transparent Open Governance models
+
+## What We Do
+
+### Localisation Initiatives
+
+YaTTI develops and maintains the **official en_ID locale definition** - the English (Indonesia) locale that enables proper date, time, currency, and cultural formatting for English-language software used in Indonesia. This crucial infrastructure ensures that international software respects Indonesian conventions while operating in English.
+
+### Knowledgebase Systems
+We maintain [specialised vector databases and APIs](https://yatti.id/kb/) for querying domain-specific knowledge, including:
+- [Applied Anthropology](https://yatti.id/kb/appliedanthropology.php) resources
+- [Secular Dharma](https://yatti.id/kb/seculardharma.php) teachings
+- Indonesian legal and regulatory information ([peraturan.go.id](https://yatti.id/kb/peraturan.go.id.php))
+
+**API Endpoint**: `https://yatti.id/v1/` (Under development)
+
+### Major Software Projects
+
+#### Core Knowledgebase Infrastructure
+- **customkb** - Advanced knowledgebase management system with vector database support, semantic search capabilities, and LLM integration
+- **kb-query** - Command-line interface for querying knowledgebases with support for context-aware responses and reference material integration (under development)
+- **dejavu2-cli** - Modern terminal-based file browser and manager with advanced search and filtering capabilities
+
+#### System Utilities
+- **md2ansi** - Markdown to ANSI converter for beautiful terminal output, supporting tables, syntax highlighting, and custom themes
+- **checkpoint** - Intelligent backup and checkpoint system for development workflows
+- **syshealth** - Comprehensive system monitoring and health checking suite
+- **rtfm** - Smart documentation reader and search tool ("Read The Fine Manual")
 
 ## Contributing
 
