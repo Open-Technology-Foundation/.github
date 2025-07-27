@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="https://yatti.id/images/logo.svg" alt="YaTTI Logo" width="200">
-</p>
-
-# YaTTI - Indonesian Open Technology Foundation
+# <img src="https://yatti.id/images/logo.svg" alt="YaTTI Logo" height="32" style="vertical-align: middle"> YaTTI - Indonesian Open Technology Foundation
 
 YaTTI (Yayasan Teknologi Terbuka Indonesia) is the Indonesian Open Technology Foundation, established in 2014 with a clear mission: to democratise technology and make knowledge freely available to all Indonesians. We believe that sustainable progress comes not from proprietary systems or closed knowledge, but from transparency, collaboration, and shared innovation.
 
