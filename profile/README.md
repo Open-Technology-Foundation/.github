@@ -4,7 +4,7 @@
 
 YaTTI (Yayasan Teknologi Terbuka Indonesia) has been democratizing technology access across Indonesia since 2014. We build practical open source tools that solve real problems—from navigating complex regulations to preserving cultural wisdom—while advocating for transparency and collaboration in a traditionally hierarchical society.
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### AI & Knowledge Systems
 - **[peraturan.go.id](https://github.com/Open-Technology-Foundation/peraturan.go.id)** - AI-powered search for 5,800+ Indonesian regulations. Transforms impenetrable legal PDFs into actionable insights for 66 million SMEs, law firms, and citizens.
@@ -24,7 +24,7 @@ YaTTI (Yayasan Teknologi Terbuka Indonesia) has been democratizing technology ac
 ### System Utilities
 Browse our [full repository list](https://github.com/Open-Technology-Foundation) for specialized tools including process monitors, time utilities, and shell enhancements.
 
-## 📡 API Access
+## API Access
 
 Query our knowledge bases programmatically:
 
@@ -41,7 +41,7 @@ curl -s "https://yatti.id/v1/list" | jq
 
 Full API documentation: `https://yatti.id/v1/help`
 
-## 🤝 Get Involved
+## Get Involved
 
 ### For Developers
 - **Contribute**: Pick any repository and dive in. We welcome PRs that align with our open technology mission.
@@ -58,7 +58,7 @@ Full API documentation: `https://yatti.id/v1/help`
 - **Share**: Spread awareness about open technology alternatives.
 - **Advocate**: Push for transparency and openness in your communities.
 
-## 🎯 Our Approach
+## Our Approach
 
 We believe sustainable progress comes from:
 - **Open Source** - Every line of code freely available
@@ -70,7 +70,7 @@ We believe sustainable progress comes from:
 
 Read our detailed [position papers](https://yatti.id/statements/) on each principle.
 
-## 📞 Connect
+## Connect
 
 - **Website**: [https://yatti.id](https://yatti.id)
 - **Email**: admin@yatti.id
