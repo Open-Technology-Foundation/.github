@@ -8,14 +8,17 @@
 
 **Building Indonesia's digital future through open technology, one project at a time.**
 
-YaTTI (Yayasan Teknologi Terbuka Indonesia) has been democratizing technology access across Indonesia since 2014. We build practical open source tools that solve real problems—from navigating complex regulations to preserving cultural wisdom—while advocating for transparency and collaboration in a traditionally hierarchical society.
+YaTTI (Yayasan Teknologi Terbuka Indonesia) has been democratizing technology access across Indonesia since 2014. We build practical open source tools that solve real problems—from AI-powered legal search to cultural knowledge preservation—while advocating for transparency and collaboration. With 72 repositories and 13 specialized knowledgebases, we're making technology work for everyone.
 
 ### Featured Projects
 
-#### AI & Knowledge Systems
-- **[peraturan.go.id](https://github.com/Open-Technology-Foundation/peraturan.go.id)** - AI-powered search for 5,800+ Indonesian regulations. Transforms impenetrable legal PDFs into actionable insights for 66 million SMEs, law firms, and citizens.
-- **[customkb](https://github.com/Open-Technology-Foundation/customkb)** - Build your own AI knowledge bases with vector search, semantic queries, and LLM integration. Powers all YaTTI knowledge systems.
+#### API & CLI Tools
+- **[yatti-api](https://github.com/Open-Technology-Foundation/yatti-api)** - Command-line interface for querying YaTTI knowledgebases with LLM-powered responses. Features multi-model support (GPT, Claude, Gemini), retry logic, GPG-verified updates, and 240+ tests.
 - **[dejavu2-cli](https://github.com/Open-Technology-Foundation/dejavu2-cli)** - Elegant terminal interface for querying knowledge bases and interacting with LLMs. Your command-line gateway to AI.
+
+#### AI & Knowledge Infrastructure
+- **[customkb](https://github.com/Open-Technology-Foundation/customkb)** - Build your own AI knowledge bases with vector search, semantic queries, and LLM integration. Powers all YaTTI knowledge systems.
+- **[peraturan.go.id](https://github.com/Open-Technology-Foundation/peraturan.go.id)** - AI-powered search for 5,800+ Indonesian regulations. Transforms impenetrable legal PDFs into actionable insights for 66 million SMEs, law firms, and citizens.
 
 #### Knowledge Preservation
 - **[appliedanthropology](https://github.com/Open-Technology-Foundation/appliedanthropology)** - 777,000+ documents bridging anthropology, evolution, and cultural studies. Making academic knowledge accessible.
@@ -30,22 +33,61 @@ YaTTI (Yayasan Teknologi Terbuka Indonesia) has been democratizing technology ac
 #### System Utilities
 Browse our [full repository list](https://github.com/Open-Technology-Foundation) for specialized tools including process monitors, time utilities, and shell enhancements.
 
+### Knowledgebases
+
+YaTTI maintains 13 specialized knowledgebases covering Indonesian law, anthropology, philosophy, and culture:
+
+| Knowledgebase | Description |
+|---------------|-------------|
+| **[peraturan.go.id](https://yatti.id)** | Indonesian laws and regulations (5,800+ documents) |
+| **[appliedanthropology](https://yatti.id)** | 777,000+ scholarly documents on evolution, culture, and dharma |
+| **[seculardharma](https://yatti.id)** | Secular dharma philosophy and ethical living |
+| **[wayang.net](https://yatti.id)** | Indonesian wayang culture and traditional performing arts |
+
+Query any knowledgebase via the [yatti-api CLI](#api-access) or [REST API](https://yatti.id/v1/help).
+
 ### API Access
 
-Query our knowledge bases programmatically:
+#### Using yatti-api CLI (Recommended)
+
+The easiest way to query YaTTI knowledgebases:
 
 ```bash
-# Search Indonesian regulations
-curl -s "https://yatti.id/v1/peraturan.go.id?q=pajak%20umkm" | jq
+# Install yatti-api
+curl -fsSL https://yatti.id/v1/client/download -o yatti-api && chmod +x yatti-api
+sudo mv yatti-api /usr/local/bin/
+
+# Configure your API key
+yatti-api configure
+
+# Query Indonesian regulations
+yatti-api query -K peraturan.go.id -q "pajak UMKM"
 
 # Get anthropology insights
-curl -s "https://yatti.id/v1/appliedanthropology?q=cultural%20evolution" | jq
+yatti-api query -K appliedanthropology -q "cultural evolution"
 
-# List all available knowledge bases
-curl -s "https://yatti.id/v1/list" | jq
+# List available knowledgebases
+yatti-api kb list
 ```
 
-Full API documentation: `https://yatti.id/v1/help`
+#### Using REST API
+
+For programmatic access, use the REST API with authentication:
+
+```bash
+# Set your API key
+export YATTI_API_KEY="your-api-key"
+
+# Search Indonesian regulations
+curl -s -H "Authorization: Bearer $YATTI_API_KEY" \
+  "https://yatti.id/v1/peraturan.go.id?q=pajak%20umkm" | jq
+
+# List all available knowledge bases
+curl -s -H "Authorization: Bearer $YATTI_API_KEY" \
+  "https://yatti.id/v1/list" | jq
+```
+
+Full API documentation: [https://yatti.id/v1/help](https://yatti.id/v1/help)
 
 ### Get Involved
 
@@ -89,14 +131,17 @@ Read our detailed [position papers](https://yatti.id/statements/) on each princi
 
 **Membangun masa depan digital Indonesia melalui teknologi terbuka, satu proyek pada satu waktu.**
 
-YaTTI (Yayasan Teknologi Terbuka Indonesia) telah mendemokratisasi akses teknologi di seluruh Indonesia sejak 2014. Kami membangun alat open source praktis yang memecahkan masalah nyata—dari menavigasi regulasi yang kompleks hingga melestarikan kearifan budaya—sambil mengadvokasi transparansi dan kolaborasi dalam masyarakat yang secara tradisional hierarkis.
+YaTTI (Yayasan Teknologi Terbuka Indonesia) telah mendemokratisasi akses teknologi di seluruh Indonesia sejak 2014. Kami membangun alat open source praktis yang memecahkan masalah nyata—dari pencarian hukum bertenaga AI hingga pelestarian pengetahuan budaya—sambil mengadvokasi transparansi dan kolaborasi. Dengan 72 repositori dan 13 basis pengetahuan khusus, kami membuat teknologi bekerja untuk semua orang.
 
 ### Proyek Unggulan
 
-#### AI & Sistem Pengetahuan
-- **[peraturan.go.id](https://github.com/Open-Technology-Foundation/peraturan.go.id)** - Pencarian bertenaga AI untuk 5.800+ peraturan Indonesia. Mengubah PDF hukum yang sulit dipahami menjadi wawasan yang dapat ditindaklanjuti untuk 66 juta UMKM, firma hukum, dan warga negara.
-- **[customkb](https://github.com/Open-Technology-Foundation/customkb)** - Bangun basis pengetahuan AI Anda sendiri dengan pencarian vektor, kueri semantik, dan integrasi LLM. Menggerakkan semua sistem pengetahuan YaTTI.
+#### Alat API & CLI
+- **[yatti-api](https://github.com/Open-Technology-Foundation/yatti-api)** - Antarmuka baris perintah untuk mengkueri basis pengetahuan YaTTI dengan respons bertenaga LLM. Fitur dukungan multi-model (GPT, Claude, Gemini), logika retry, pembaruan terverifikasi GPG, dan 240+ tes.
 - **[dejavu2-cli](https://github.com/Open-Technology-Foundation/dejavu2-cli)** - Antarmuka terminal yang elegan untuk mengkueri basis pengetahuan dan berinteraksi dengan LLM. Gerbang baris perintah Anda ke AI.
+
+#### Infrastruktur AI & Pengetahuan
+- **[customkb](https://github.com/Open-Technology-Foundation/customkb)** - Bangun basis pengetahuan AI Anda sendiri dengan pencarian vektor, kueri semantik, dan integrasi LLM. Menggerakkan semua sistem pengetahuan YaTTI.
+- **[peraturan.go.id](https://github.com/Open-Technology-Foundation/peraturan.go.id)** - Pencarian bertenaga AI untuk 5.800+ peraturan Indonesia. Mengubah PDF hukum yang sulit dipahami menjadi wawasan yang dapat ditindaklanjuti untuk 66 juta UMKM, firma hukum, dan warga negara.
 
 #### Pelestarian Pengetahuan
 - **[appliedanthropology](https://github.com/Open-Technology-Foundation/appliedanthropology)** - 777.000+ dokumen yang menjembatani antropologi, evolusi, dan studi budaya. Membuat pengetahuan akademis dapat diakses.
@@ -111,22 +156,61 @@ YaTTI (Yayasan Teknologi Terbuka Indonesia) telah mendemokratisasi akses teknolo
 #### Utilitas Sistem
 Jelajahi [daftar repositori lengkap](https://github.com/Open-Technology-Foundation) kami untuk alat khusus termasuk pemantau proses, utilitas waktu, dan peningkatan shell.
 
+### Basis Pengetahuan
+
+YaTTI mengelola 13 basis pengetahuan khusus yang mencakup hukum Indonesia, antropologi, filsafat, dan budaya:
+
+| Basis Pengetahuan | Deskripsi |
+|-------------------|-----------|
+| **[peraturan.go.id](https://yatti.id)** | Hukum dan peraturan Indonesia (5.800+ dokumen) |
+| **[appliedanthropology](https://yatti.id)** | 777.000+ dokumen ilmiah tentang evolusi, budaya, dan dharma |
+| **[seculardharma](https://yatti.id)** | Filsafat dharma sekuler dan kehidupan etis |
+| **[wayang.net](https://yatti.id)** | Budaya wayang Indonesia dan seni pertunjukan tradisional |
+
+Kueri basis pengetahuan mana pun melalui [yatti-api CLI](#akses-api) atau [REST API](https://yatti.id/v1/help).
+
 ### Akses API
 
-Kueri basis pengetahuan kami secara programatik:
+#### Menggunakan yatti-api CLI (Direkomendasikan)
+
+Cara termudah untuk mengkueri basis pengetahuan YaTTI:
 
 ```bash
-# Cari peraturan Indonesia
-curl -s "https://yatti.id/v1/peraturan.go.id?q=pajak%20umkm" | jq
+# Instal yatti-api
+curl -fsSL https://yatti.id/v1/client/download -o yatti-api && chmod +x yatti-api
+sudo mv yatti-api /usr/local/bin/
+
+# Konfigurasi API key Anda
+yatti-api configure
+
+# Kueri peraturan Indonesia
+yatti-api query -K peraturan.go.id -q "pajak UMKM"
 
 # Dapatkan wawasan antropologi
-curl -s "https://yatti.id/v1/appliedanthropology?q=cultural%20evolution" | jq
+yatti-api query -K appliedanthropology -q "evolusi budaya"
 
-# Daftar semua basis pengetahuan yang tersedia
-curl -s "https://yatti.id/v1/list" | jq
+# Daftar basis pengetahuan yang tersedia
+yatti-api kb list
 ```
 
-Dokumentasi API lengkap: `https://yatti.id/v1/help`
+#### Menggunakan REST API
+
+Untuk akses programatik, gunakan REST API dengan autentikasi:
+
+```bash
+# Set API key Anda
+export YATTI_API_KEY="your-api-key"
+
+# Cari peraturan Indonesia
+curl -s -H "Authorization: Bearer $YATTI_API_KEY" \
+  "https://yatti.id/v1/peraturan.go.id?q=pajak%20umkm" | jq
+
+# Daftar semua basis pengetahuan yang tersedia
+curl -s -H "Authorization: Bearer $YATTI_API_KEY" \
+  "https://yatti.id/v1/list" | jq
+```
+
+Dokumentasi API lengkap: [https://yatti.id/v1/help](https://yatti.id/v1/help)
 
 ### Bergabunglah
 
